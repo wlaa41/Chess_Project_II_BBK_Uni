@@ -16,15 +16,22 @@ White starts the game, after which Black and White alternate by moving one of ow
 ![Not Allowed Move Example](NOT%20ALLOWED%20MOVE.jpg)
 
 - **[Rule1]** A bishop can move any number of squares diagonally, but cannot leap over other pieces.
+![Not Allowed Move Example](rule1.jpg)
+
+
 - **[Rule2]** The king moves one square in any direction, including diagonal, on the board. 
+![Not Allowed Move Example](rule2.jpg)
 
 As usual, as a result of any move, the piece that is moved either occupies a previously empty board location, or captures the other side's piece. In that case, the former piece occupies the latter's position, while the latter piece is removed from the board. Clearly, we have the following:
 
 - **[Rule3]** A piece of side X (Black or White) cannot move to a location occupied by a piece of side X.
+![Not Allowed Move Example](rule3.jpg)
 
 **Check** for side X is a configuration of the board when X's king can be captured by a piece of the other side Y (in one move). Another chess rule we obey is:
 
 - **[Rule4]** A piece of side X cannot make a move, if the configuration resulting from this move is a check for X. 
+![Not Allowed Move Example](rule4.jpg)
+
 
 **Checkmate** for side X is a configuration of the board when the king of a side X (Black or White)  is in *check* and there is no move available for X to eliminate the *check* situation.
 
